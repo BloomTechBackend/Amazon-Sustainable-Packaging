@@ -19,6 +19,7 @@ public class PackagingTest {
     private BigDecimal packagingHeight = BigDecimal.valueOf(8.1);
 
     private Packaging packaging;
+    private Box box;
 
     @BeforeEach
     public void setUp() {

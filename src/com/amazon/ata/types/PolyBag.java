@@ -30,6 +30,11 @@ public class PolyBag extends Packaging {
     }
 
     @Override
+    public Material getMaterial() {
+        return Material.LAMINATED_PLASTIC;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;

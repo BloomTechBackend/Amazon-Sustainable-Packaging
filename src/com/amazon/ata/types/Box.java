@@ -10,7 +10,7 @@ public class Box extends Packaging {
     private BigDecimal height;
 
     /**
-     * Instantiates a new Packaging object.
+     * Instantiates a new Box object.
      *
      * @param material - the Material of the package
      * @param length   - the length of the package
@@ -41,6 +41,11 @@ public class Box extends Packaging {
         BigDecimal longSidesArea = width.multiply(height).multiply(two);
 
         return endsArea.add(shortSidesArea).add(longSidesArea);
+    }
+
+    @Override
+    public Material getMaterial() {
+        return Material.CORRUGATE;
     }
 
     @Override

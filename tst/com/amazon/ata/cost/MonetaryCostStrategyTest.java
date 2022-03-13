@@ -36,18 +36,4 @@ public class MonetaryCostStrategyTest {
             "Incorrect monetary cost calculation for a box with dimensions 10x10x20.");
     }
 
-//    @Test
-//    void getCost_laminatedPlastic_Material_returnsCorrectCost() {
-//        // GIVEN
-//        ShipmentOption option = ShipmentOption.builder()
-//                .withPackaging(POLYBAG_10)
-//                .build();
-//
-//        // WHEN
-//        ShipmentCost shipmentCost = strategy.getCost(option);
-//
-//        // THEN
-//        assertTrue(BigDecimal.valueOf(5.43).compareTo(shipmentCost.getCost()) == 0,
-//                "Incorrect monetary cost calculation for a box with dimensions 10x10x20.");
-//    }
 }
