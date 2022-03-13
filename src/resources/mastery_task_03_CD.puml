@@ -1,0 +1,56 @@
+@startuml
+"Package types"
+
+class Packaging {
+    canFitItem()
+    getMass()
+ }
+
+ Packaging *- Material
+
+ class PolyBag{
+ BigDecimal volume
+ }
+
+ class Box{
+ BigDecimal length
+ BigDecimal width
+ BigDecimal height
+ }
+
+ Material{
+ LAMINATED_PLASTIC
+ CORRUGATE
+ }
+
+class Box  --|> Packaging
+class PolyBag  --|>  Packaging
+class FcPackagingOption
+class FulfillmentCenter
+class Item
+class Material
+class ShipmentCost
+class ShipmentOption
+
+class PrepareShipmentActivity
+class PrepareShipmentRequest
+class PrepareShipmentResponse
+
+interface CostStrategy
+class MonetaryCostStrategy
+
+class PackagingDAO
+
+class NoPackagingFirstItemException
+class UnknownFulfillmentCenterException
+
+class ShipmentService
+
+class FcPackagingOption
+classFulfillmentCenter
+class Item
+class Material
+class ShipmentCost
+class ShipmentOption
+class App
+@enduml
