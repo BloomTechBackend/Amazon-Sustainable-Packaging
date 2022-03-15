@@ -24,6 +24,17 @@ public class Box extends Packaging {
         this.height = height;
     }
 
+    public BigDecimal getLength() {
+        return length;
+    }
+
+    public BigDecimal getWidth() {
+        return width;
+    }
+
+    public BigDecimal getHeight() {
+        return height;
+    }
 
     @Override
     public boolean canFitItem(Item item) {

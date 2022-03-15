@@ -92,6 +92,21 @@ class PackagingDAOTest {
                 + "for each.");
     }
 
+
+    @Test
+    public void findShipmentOptions_twoIdenticalFcs_returns_singleOption()  throws Exception {
+        // GIVEN
+        packagingDAO = new PackagingDAO(datastore);
+
+        // WHEN
+        List<ShipmentOption> shipmentOptions = packagingDAO.findShipmentOptions(smallItem, iad2);
+
+        // THEN
+        assertEquals(3, shipmentOptions.size(),
+                "When fulfillment center has 2 identical options, "
+                        + "finding shipment option returns single option rather than 2 identical options");
+    }
+
     private Item createItem(String length, String width, String height) {
         return Item.builder()
                 .withAsin("B00TEST")
