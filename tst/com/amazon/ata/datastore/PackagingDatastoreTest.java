@@ -33,6 +33,10 @@ class PackagingDatastoreTest {
     Packaging package2000 = new PolyBag(Material.LAMINATED_PLASTIC, BigDecimal.valueOf(2000));
     Packaging package1000 = new PolyBag(Material.LAMINATED_PLASTIC, BigDecimal.valueOf(1000));
 
+    Packaging package5000 = new PolyBag(Material.LAMINATED_PLASTIC, BigDecimal.valueOf(5000));
+    Packaging package10000 = new PolyBag(Material.LAMINATED_PLASTIC, BigDecimal.valueOf(10000));
+    Packaging package6000 = new PolyBag(Material.LAMINATED_PLASTIC, BigDecimal.valueOf(6000));
+
     FcPackagingOption ind1_10Cm = new FcPackagingOption(ind1, package10Cm);
     FcPackagingOption abe2_20Cm = new FcPackagingOption(abe2, package20Cm);
     FcPackagingOption abe2_40Cm = new FcPackagingOption(abe2, package40Cm);
@@ -45,11 +49,28 @@ class PackagingDatastoreTest {
     FcPackagingOption iad2_2000 = new FcPackagingOption(iad2, package2000);
     FcPackagingOption iad2_1000 = new FcPackagingOption(iad2, package1000);
 
+    FcPackagingOption iad2_5000 = new FcPackagingOption(iad2, package5000);
+    FcPackagingOption yow4_2000 = new FcPackagingOption(yow4, package2000);
+    FcPackagingOption yow4_5000 = new FcPackagingOption(yow4, package5000);
+    FcPackagingOption yow4_10000 = new FcPackagingOption(yow4, package10000);
+    FcPackagingOption ind1_2000 = new FcPackagingOption(ind1, package2000);
+    FcPackagingOption ind1_5000 = new FcPackagingOption(ind1, package5000);
+    FcPackagingOption abe2_2000 = new FcPackagingOption(abe2, package2000);
+    FcPackagingOption abe2_6000 = new FcPackagingOption(abe2, package6000);
+    FcPackagingOption pdx1_5000 = new FcPackagingOption(pdx1, package5000);
+    FcPackagingOption pdx1_10000 = new FcPackagingOption(pdx1, package10000);
+    FcPackagingOption yow4_5000_2 = new FcPackagingOption(yow4, package5000);
+
 
     @Test
     public void getFcPackagingOptions_get_returnAllOptions() {
         // GIVEN
         PackagingDatastore packagingDatastore = new PackagingDatastore();
+//        List<FcPackagingOption> expectedPackagingOptions = Arrays.asList(ind1_10Cm, abe2_20Cm, abe2_40Cm, yow4_10Cm,
+//                yow4_20Cm, yow4_60Cm, iad2_20Cm, iad2_20Cm, pdx1_40Cm, pdx1_60Cm, pdx1_60Cm, iad2_2000,iad2_1000,
+//                iad2_5000,yow4_2000, yow4_5000, yow4_10000, ind1_2000, ind1_5000, abe2_2000, abe2_6000, pdx1_5000,
+//                pdx1_10000, yow4_5000_2);
+
         List<FcPackagingOption> expectedPackagingOptions = Arrays.asList(ind1_10Cm, abe2_20Cm, abe2_40Cm, yow4_10Cm,
                 yow4_20Cm, yow4_60Cm, iad2_20Cm, iad2_20Cm, pdx1_40Cm, pdx1_60Cm, pdx1_60Cm, iad2_2000,iad2_1000);
 

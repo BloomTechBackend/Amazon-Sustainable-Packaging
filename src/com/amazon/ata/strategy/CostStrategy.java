@@ -1,4 +1,4 @@
-package com.amazon.ata.cost;
+package com.amazon.ata.strategy;
 
 import com.amazon.ata.types.ShipmentCost;
 import com.amazon.ata.types.ShipmentOption;

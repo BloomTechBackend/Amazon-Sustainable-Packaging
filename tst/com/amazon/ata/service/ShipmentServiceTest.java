@@ -1,6 +1,6 @@
 package com.amazon.ata.service;
 
-import com.amazon.ata.cost.MonetaryCostStrategy;
+import com.amazon.ata.strategy.MonetaryCostStrategy;
 import com.amazon.ata.dao.PackagingDAO;
 import com.amazon.ata.datastore.PackagingDatastore;
 import com.amazon.ata.types.FulfillmentCenter;
