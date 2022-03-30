@@ -9,7 +9,6 @@ import com.amazon.ata.types.ShipmentOption;
  * The cost may be a monetary cost or more abstract like an environmental cost.
  */
 public interface CostStrategy {
-
     /**
      * Get the cost of the shipment option.
      *

@@ -54,9 +54,7 @@ public class PackagingDAO {
      */
     public List<ShipmentOption> findShipmentOptions(Item item, FulfillmentCenter fulfillmentCenter)
             throws UnknownFulfillmentCenterException, NoPackagingFitsItemException {
-
         // Check FcPackagingOptions for a suitable Packaging in the given FulfillmentCenter
-//        List<ShipmentOption> result = new ArrayList<>();
         Set<ShipmentOption> result = new HashSet<>();
         boolean fcFound = false;
 
