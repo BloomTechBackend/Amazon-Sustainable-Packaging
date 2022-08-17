@@ -36,6 +36,7 @@ public class ShipmentService {
      */
     public ShipmentService(PackagingDAO packagingDAO, CostStrategy costStrategy) {
         this.packagingDAO = packagingDAO;
+
         this.costStrategy = costStrategy;
     }
     /**
